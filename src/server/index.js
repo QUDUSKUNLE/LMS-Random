@@ -4,9 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import expressValidator from 'express-validator';
-import errorHandler from 'errorhandler';
 
-// import routes from './routes/index';
+import routes from './routes';
 
 dotenv.config();
 
@@ -26,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
 
 
-// app.use('/api/v1', routes);
+app.use('/api/v1', routes);
 app.get('/', (req, res) => res.status(200).json({ home: 'LMS Home' }));
 
 app.listen(port, () => console.log(`LMS running on PORT ${port}`));
