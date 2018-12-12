@@ -43,7 +43,7 @@ export default class RandomPhoneNumberController {
     try {
       const  saveNumber = new Models(phoneId, phoneNumber);
       const result = await saveNumber.save()
-      res.status(200).json({
+      res.status(201).json({
         response: result,
         success: true
       });
