@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import express from 'express';
 
 import RandomPhoneNumberController from '../controllers';
@@ -12,7 +13,7 @@ router.get(
 );
 
 router.post(
-  '/phone-number',
+  '/phone-numbers',
   verifyToken,
   RandomPhoneNumberController.generatePhoneNumber
 );
