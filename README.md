@@ -30,7 +30,7 @@ LMS-Random allows a telecommunication companies to generate phone numbers.
 
   + install project dependencies ```npm install```
 
-  + Create ```.env``` file and set up the variables in ```.env-sample``` to your specified database connection gotten from ```mlab or Robo 3T```
+  + Create ```.env``` file and set up the environment variables in ```.env-sample```
 
    + and run `npm start` to run the application
 
